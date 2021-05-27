@@ -1,0 +1,31 @@
+### Buscar las edificaciones
+GET http://localhost:4012/api/buscar
+
+### Eliminar edificación
+DELETE http://localhost:4012/api/eliminar/60a495cfe20fd9d217ceb8d5
+
+### Actualizar edificación
+PUT http://localhost:4012/api/actualizar/60a497e08c3a3bd6b5100126
+Content-Type: application/json
+
+{
+    "nombre": "Concordia",
+    "categoria": "Edificio",
+    "arquitectura": "Clasica",
+    "direccion": "Av 1 junto al edificio Peras",
+    "dimensionTerreno": 10,
+    "divisiones": 6
+}
+
+### Crear edificación
+POST http://localhost:4012/api/crear
+Content-Type: application/json
+
+{
+    "nombre": "Aereo",
+    "categoria": "Edificio",
+    "arquitectura": "Clasica",
+    "direccion": "Av 1 junto al edificio Peras",
+    "dimensionTerreno": 10,
+    "divisiones": 6
+}
